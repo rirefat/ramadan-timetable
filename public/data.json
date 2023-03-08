@@ -1,0 +1,272 @@
+[
+    {
+        "serial": 1,
+        "category": "rahamat",
+        "date": "24 March 2023",
+        "day": "Friday",
+        "sehri": "4:38 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:14 PM"
+    },
+    {
+        "serial": 2,
+        "category": "rahamat",
+        "date": "25 March 2023",
+        "day": "Saturday",
+        "sehri": "4:37 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:14 PM"
+    },
+    {
+        "serial": 3,
+        "category": "rahamat",
+        "date": "26 March 2023",
+        "day": "Sunday",
+        "sehri": "4:36 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:15 PM"
+    },
+    {
+        "serial": 4,
+        "category": "rahamat",
+        "date": "27 March 2023",
+        "day": "Monday",
+        "sehri": "4:35 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:15 PM"
+    },
+    {
+        "serial": 5,
+        "category": "rahamat",
+        "date": "28 March 2023",
+        "day": "Tuesday",
+        "sehri": "4:34 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:16 PM"
+    },
+    {
+        "serial": 6,
+        "category": "rahamat",
+        "date": "29 March 2023",
+        "day": "Wednesday",
+        "sehri": "4:32 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:16 PM"
+    },
+    {
+        "serial": 7,
+        "category": "rahamat",
+        "date": "30 March 2023",
+        "day": "Thursday",
+        "sehri": "4:31 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:17 PM"
+    },
+    {
+        "serial": 8,
+        "category": "rahamat",
+        "date": "31 March 2023",
+        "day": "Friday",
+        "sehri": "4:30 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:17 PM"
+    },
+    {
+        "serial": 9,
+        "category": "rahamat",
+        "date": "01 April 2023",
+        "day": "Saturday",
+        "sehri": "4:29 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:18 PM"
+    },
+    {
+        "serial": 10,
+        "category": "rahamat",
+        "date": "02 April 2023",
+        "day": "Sunday",
+        "sehri": "4:28 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:18 PM"
+    },
+    {
+        "serial": 11,
+        "category": "magfirat",
+        "date": "03 April 2023",
+        "day": "Monday",
+        "sehri": "4:27 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:19 PM"
+    },
+    {
+        "serial": 12,
+        "category": "magfirat",
+        "date": "04 April 2023",
+        "day": "Tuesday",
+        "sehri": "4:26 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:19 PM"
+    },
+    {
+        "serial": 13,
+        "category": "magfirat",
+        "date": "05 April 2023",
+        "day": "Wednesday",
+        "sehri": "4:25 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:20 PM"
+    },
+    {
+        "serial": 14,
+        "category": "magfirat",
+        "date": "06 April 2023",
+        "day": "Thursday",
+        "sehri": "4:24 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:20 PM"
+    },
+    {
+        "serial": 15,
+        "category": "magfirat",
+        "date": "07 April 2023",
+        "day": "Friday",
+        "sehri": "4:23 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:21 PM"
+    },
+    {
+        "serial": 16,
+        "category": "magfirat",
+        "date": "08 April 2023",
+        "day": "Saturday",
+        "sehri": "4:22 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:21 PM"
+    },
+    {
+        "serial": 17,
+        "category": "magfirat",
+        "date": "09 April 2023",
+        "day": "Sunday",
+        "sehri": "4:21 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:22 PM"
+    },
+    {
+        "serial": 18,
+        "category": "magfirat",
+        "date": "10 April 2023",
+        "day": "Monday",
+        "sehri": "4:20 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:22 PM"
+    },
+    {
+        "serial": 19,
+        "category": "magfirat",
+        "date": "11 April 2023",
+        "day": "Tuesday",
+        "sehri": "4:19 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:22 PM"
+    },
+    {
+        "serial": 20,
+        "category": "magfirat",
+        "date": "12 April 2023",
+        "day": "Wednesday",
+        "sehri": "4:18 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:23 PM"
+    },
+    {
+        "serial": 21,
+        "category": "nazwat",
+        "date": "13 April 2023",
+        "day": "Thursday",
+        "sehri": "4:16 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:23 PM"
+    },
+    {
+        "serial": 22,
+        "category": "nazwat",
+        "date": "14 April 2023",
+        "day": "Friday",
+        "sehri": "4:15 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:23 PM"
+    },
+    {
+        "serial": 23,
+        "category": "nazwat",
+        "date": "15 April 2023",
+        "day": "Saturday",
+        "sehri": "4:14 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:24 PM"
+    },
+    {
+        "serial": 24,
+        "category": "nazwat",
+        "date": "16 April 2023",
+        "day": "Sunday",
+        "sehri": "4:13 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:24 PM"
+    },
+    {
+        "serial": 25,
+        "category": "nazwat",
+        "date": "17 April 2023",
+        "day": "Monday",
+        "sehri": "4:12 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:24 PM"
+    },
+    {
+        "serial": 26,
+        "category": "nazwat",
+        "date": "18 April 2023",
+        "day": "Tuesday",
+        "sehri": "4:11 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:25 PM"
+    },
+    {
+        "serial": 27,
+        "category": "nazwat",
+        "date": "19 April 2023",
+        "day": "Wednesday",
+        "sehri": "4:10 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:25 PM"
+    },
+    {
+        "serial": 28,
+        "category": "nazwat",
+        "date": "20 April 2023",
+        "day": "Thursday",
+        "sehri": "4:00 AM",      
+        "sunrise": "4:09 AM",
+        "ifter": "6:26 PM"
+    },
+    {
+        "serial": 29,
+        "category": "nazwat",
+        "date": "21 April 2023",
+        "day": "Friday",
+        "sehri": "4:00 AM",      
+        "sunrise": "4:08 AM",
+        "ifter": "6:26 PM"
+    },
+    {
+        "serial": 30,
+        "category": "nazwat",
+        "date": "22 April 2023",
+        "day": "Saturday",
+        "sehri": "4:07 AM",      
+        "sunrise": "4:00 AM",
+        "ifter": "6:26 PM"
+    }
+]
