@@ -20,6 +20,32 @@ $shadow: #b1b1b140;
 
     .top-left {
         width: 50%;
+
+        h1{
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            margin: 0;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.3rem;
+            letter-spacing: 0.15rem;
+            color: $primary;
+            background: #6a74c97d;
+            color: #fff;
+            display: inline-block;
+            padding: 1% 4%;
+            border-radius: 12px;
+        }
+
+        p{
+            font-size: 1.1rem;
+            line-height: 2rem;
+            margin: 0;
+        }
     }
 
     .top-right {
@@ -31,6 +57,8 @@ $shadow: #b1b1b140;
 
         h1 {
             color: $primary;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
         }
 
         .main {
@@ -72,6 +100,11 @@ $shadow: #b1b1b140;
                     padding: 0.8rem ;
                     border-radius: 10px;
                     font-size: 1.25rem;
+                    margin: 4% 0;
+
+                    .time{
+                        font-weight: 500;
+                    }
                 }
             }
         }

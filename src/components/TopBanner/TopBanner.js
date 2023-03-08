@@ -7,7 +7,7 @@ const TopBanner = () => {
             <div className="top-left">
                 <h1>Ramadan Kareem</h1>
                 <h3>SAHRI AND IFTER TIME SCHEDULE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam nemo quisquam! Aperiam incidunt modi veniam laborum nihil perferendis ipsum.</p>
+                <p>"O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous" <strong>-- Surat Al-Baqarah 2:183</strong></p>                
             </div>
             <div className="top-right">
                 <h1>Today's Schedule</h1>
@@ -20,9 +20,9 @@ const TopBanner = () => {
                     </div>
 
                     <div className="todays-schedule">
-                        <p>Sehri - 00:00 AM</p>
-                        <p>Sunrise - 00:00 AM</p>
-                        <p>Iftar - 00:00 AM</p>
+                        <p>Sehri - <span className="time">00:00 AM</span></p>
+                        <p>Sunrise - <span className="time">00:00 AM</span></p>
+                        <p>Iftar - <span className="time">00:00 AM</span></p>
                     </div>
                 </div>
             </div>
