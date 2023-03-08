@@ -1,9 +1,11 @@
 import React from 'react';
+import TopBanner from './components/TopBanner/TopBanner';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      
+    <div className='main-container'>
+      <TopBanner></TopBanner>
     </div>
   );
 };

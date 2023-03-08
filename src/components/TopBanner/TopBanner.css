@@ -1,0 +1,60 @@
+.top-banner {
+  color: white;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(45deg, #00569a, transparent), url(../../img/bg.jpg);
+  border-radius: 20px;
+}
+.top-banner .top-left {
+  width: 50%;
+}
+.top-banner .top-right {
+  width: 30%;
+  background-color: #eff2f9;
+  margin: 2.8% 0;
+  border-radius: 20px;
+  padding: 2%;
+}
+.top-banner .top-right h1 {
+  color: #6a74c9;
+}
+.top-banner .top-right .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.top-banner .top-right .main .today {
+  padding: 5% 8%;
+  text-align: center;
+  color: #484848;
+  background: #fff;
+  border-radius: 10px;
+}
+.top-banner .top-right .main .today h2 {
+  color: #6a74c9;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+.top-banner .top-right .main .today h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.top-banner .top-right .main .today p {
+  margin: 0;
+}
+.top-banner .top-right .main .todays-schedule p {
+  background-color: #fff;
+  color: #484848;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}/*# sourceMappingURL=TopBanner.css.map */

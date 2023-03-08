@@ -1,0 +1,79 @@
+$background: #eff2f9;
+$foreground: #fff;
+$primary: #6a74c9;
+$text-black: #484848;
+$text-gray: #4f4f4f;
+$border: #e6e6e6;
+$shadow: #b1b1b140;
+
+.top-banner {
+    color: white;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(45deg, #00569a, transparent), url(../../img/bg.jpg);
+    border-radius: 20px;
+
+    .top-left {
+        width: 50%;
+    }
+
+    .top-right {
+        width: 30%;
+        background-color: $background;
+        margin: 2.8% 0;
+        border-radius: 20px;
+        padding: 2%;
+
+        h1 {
+            color: $primary;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+
+            .today {
+                padding: 5% 8%;
+                text-align: center;
+                color: $text-black;
+                background: $foreground;
+                border-radius: 10px;
+
+                h2 {
+                    color: $primary;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                h3{
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    margin: 0;
+                }
+            }
+
+            .todays-schedule {
+                p {
+                    background-color: $foreground;
+                    color: $text-black;
+                    padding: 0.8rem ;
+                    border-radius: 10px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
