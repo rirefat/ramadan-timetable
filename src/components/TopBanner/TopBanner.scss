@@ -21,6 +21,16 @@ $shadow: #b1b1b140;
     .top-left {
         width: 50%;
 
+        .current-time{
+            display: inline-block;
+            background-color: $background;
+            color: $text-black;
+            padding: 1% 1.5%;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
         h1{
             font-size: 3.5rem;
             text-transform: uppercase;

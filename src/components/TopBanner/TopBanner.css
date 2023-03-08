@@ -13,6 +13,15 @@
 .top-banner .top-left {
   width: 50%;
 }
+.top-banner .top-left .current-time {
+  display: inline-block;
+  background-color: #eff2f9;
+  color: #484848;
+  padding: 1% 1.5%;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
 .top-banner .top-left h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
