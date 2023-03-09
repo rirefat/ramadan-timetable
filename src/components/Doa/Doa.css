@@ -1,0 +1,28 @@
+.single-doa {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+}
+.single-doa h3 {
+  text-transform: uppercase;
+  color: #6a74c9;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.single-doa .description {
+  margin-bottom: 0.8rem;
+}
+.single-doa .arabic-doa {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.single-doa p {
+  margin: 0;
+  color: #4f4f4f;
+}
+.single-doa h4 {
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}/*# sourceMappingURL=Doa.css.map */
