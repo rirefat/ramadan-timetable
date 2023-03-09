@@ -1,18 +1,18 @@
 import React from 'react';
 import useData from '../../Hooks/useData';
 import Schedule from '../Schedule/Schedule';
-import './MagfiratSection.css';
+import './NazwatSection.css';
 
-const MagfiratSection = () => {
+const NazwatSection = () => {
     const [scheduleData, setScheduleData] = useData();
 
-    let magfirat = scheduleData.filter((singleData) => {
-        return singleData.category === "magfirat";
+    let nazwat = scheduleData.filter((singleData) => {
+        return singleData.category === "nazwat";
     })
 
     return (
         <div className='main-div'>
-            <h2 className='section-title'>10 Days Of Magfirat</h2>
+            <h2>10 Days Of Nazwat</h2>
             <div className="headings">
                 <h3>Ramadan</h3>
                 <h3>Date</h3>
@@ -22,11 +22,11 @@ const MagfiratSection = () => {
             </div>
             <div className="schedules">
                 {
-                    magfirat.map(schedule => <Schedule key={schedule.serial} schedule={schedule}></Schedule>)
+                    nazwat.map(schedule => <Schedule key={schedule.serial} schedule={schedule}></Schedule>)
                 }
             </div>
         </div>
     );
 };
 
-export default MagfiratSection;
+export default NazwatSection;
