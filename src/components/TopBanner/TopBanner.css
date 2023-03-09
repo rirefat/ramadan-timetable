@@ -10,6 +10,7 @@
   background-position: center;
   background: linear-gradient(45deg, #00569a, transparent), url(../../img/bg.jpg);
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .top-banner .top-left {
   width: 50%;
@@ -65,6 +66,7 @@
   color: #6a74c9;
   font-weight: 600;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 .top-banner .top-right .main {
   display: grid;
@@ -77,6 +79,7 @@
   color: #484848;
   background: rgba(255, 255, 255, 0.8470588235);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .top-banner .top-right .main .today h2 {
   color: #6a74c9;
@@ -101,6 +104,7 @@
   border-radius: 10px;
   font-size: 1.15rem;
   margin: 4% 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .top-banner .top-right .main .todays-schedule p .time {
   font-weight: 500;

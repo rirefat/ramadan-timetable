@@ -20,6 +20,7 @@ $shadow: #b1b1b140;
     background-position: center;
     background: linear-gradient(45deg, #00569a, transparent), url(../../img/bg.jpg);
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
     .top-left {
         width: 50%;
@@ -82,6 +83,7 @@ $shadow: #b1b1b140;
             color: $primary;
             font-weight: 600;
             letter-spacing: 0.1rem;
+            text-transform: uppercase;
         }
 
         .main {
@@ -95,6 +97,7 @@ $shadow: #b1b1b140;
                 color: $text-black;
                 background: $foreground-transparent;
                 border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
                 h2 {
                     color: $primary;
@@ -124,6 +127,7 @@ $shadow: #b1b1b140;
                     border-radius: 10px;
                     font-size: 1.15rem;
                     margin: 4% 0;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
                     .time{
                         font-weight: 500;

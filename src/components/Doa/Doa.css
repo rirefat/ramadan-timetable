@@ -4,6 +4,7 @@
   padding: 2rem 2.5rem;
   margin-bottom: 1.2rem;
   border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .single-doa h3 {
   text-transform: uppercase;
