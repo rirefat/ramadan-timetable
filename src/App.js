@@ -3,6 +3,7 @@ import TopBanner from './components/TopBanner/TopBanner';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import MainBody from './components/MainBody/MainBody';
+import ScrollToTop from 'react-scroll-to-top';
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <TopBanner></TopBanner>
       <MainBody></MainBody>
       <Footer></Footer>
+
+      <ScrollToTop smooth color="#6a74c9" width="15" height="15"/>
     </div>
   );
 };
