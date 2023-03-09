@@ -17,10 +17,13 @@ $shadow: #b1b1b140;
             padding: 1rem 2.5rem;
             margin-bottom: 1.2rem;
             border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             .location {
                 display: flex;
-                align-items: end;
+                align-items: end;     
 
                 .location-icon {
                     font-size: 1.5rem;
