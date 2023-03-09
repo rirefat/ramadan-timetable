@@ -9,6 +9,7 @@ $shadow: #b1b1b140;
 .top-banner {
     color: white;
     padding: 0 3%;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,15 +22,25 @@ $shadow: #b1b1b140;
     .top-left {
         width: 50%;
 
-        .current-time{
-            display: inline-block;
-            background-color: $background;
-            color: $text-black;
-            padding: 1% 1.5%;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 500;
-        }
+        .current-time-section{
+            display: flex;
+            align-items: center;
+
+            .current-time{
+                display: inline-block;
+                background-color: $background;
+                color: $text-black;
+                padding: 1% 1.5%;
+                border-radius: 10px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            img{
+                width: 8%;
+                height: 8%;
+            }
+        }        
 
         h1{
             font-size: 3.5rem;

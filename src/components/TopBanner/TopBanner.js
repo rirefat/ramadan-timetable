@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './TopBanner.css';
+import redDot from '../../img/2-red-dot.gif';
 import { FcAlarmClock } from 'react-icons/fc';
 
 const TopBanner = () => {
-    const [time, setTime]=useState('');
-    const [day, setDay]=useState('');
-    const [date, setDate]=useState('');
-    const [month, setMonth]=useState('');
-    const [year, setYear]=useState('');
+    const [time, setTime] = useState('');
+    const [day, setDay] = useState('');
+    const [date, setDate] = useState('');
+    const [month, setMonth] = useState('');
+    const [year, setYear] = useState('');
 
     const dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -27,11 +28,14 @@ const TopBanner = () => {
         setMonth(monthList[currentMonth]);
         setYear(currentYear);
     });
-    console.log(day);
+    
     return (
         <div className='top-banner'>
             <div className="top-left">
-                <h4 className='current-time'>{time}</h4>
+                <div className="current-time-section">
+                    <h4 className='current-time'>{time}</h4>
+                    <img src={redDot} alt="" />
+                </div>
                 <h1>Ramadan Kareem</h1>
                 <h3>SAHRI AND IFTER TIME SCHEDULE</h3>
                 <p>"O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous" <strong>-- Surat Al-Baqarah 2:183</strong></p>

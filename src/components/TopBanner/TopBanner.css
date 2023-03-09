@@ -1,6 +1,7 @@
 .top-banner {
   color: white;
   padding: 0 3%;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +14,11 @@
 .top-banner .top-left {
   width: 50%;
 }
-.top-banner .top-left .current-time {
+.top-banner .top-left .current-time-section {
+  display: flex;
+  align-items: center;
+}
+.top-banner .top-left .current-time-section .current-time {
   display: inline-block;
   background-color: #eff2f9;
   color: #484848;
@@ -21,6 +26,10 @@
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
+}
+.top-banner .top-left .current-time-section img {
+  width: 8%;
+  height: 8%;
 }
 .top-banner .top-left h1 {
   font-size: 3.5rem;
