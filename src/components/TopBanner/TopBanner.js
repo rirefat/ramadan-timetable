@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import useData from '../../Hooks/useData';
 import './TopBanner.css';
 import redDot from '../../img/2-red-dot.gif';
-import { FcAlarmClock } from 'react-icons/fc';
 
 const TopBanner = () => {
+    const [scheduleData, setScheduleData]=useData();
+    let shortDate = new Date().toLocaleDateString();
+
     const [time, setTime] = useState('');
     const [day, setDay] = useState('');
     const [date, setDate] = useState('');
@@ -28,7 +31,7 @@ const TopBanner = () => {
         setMonth(monthList[currentMonth]);
         setYear(currentYear);
     });
-    
+ 
     return (
         <div className='top-banner'>
             <div className="top-left">
