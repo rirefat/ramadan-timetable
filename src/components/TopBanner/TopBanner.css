@@ -51,9 +51,10 @@
   border-radius: 12px;
 }
 .top-banner .top-left p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 2rem;
   margin: 0;
+  font-weight: 500;
 }
 .top-banner .top-right {
   width: 30%;

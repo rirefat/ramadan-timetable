@@ -6,9 +6,13 @@
   --text-gray: #4f4f4f;
   --border: #e6e6e6;
   --shadow: #b1b1b140;
+
+  --font-family-1: 'Quicksand', sans-serif;
+  --font-family-2: 'Dancing Script', cursive;
 }
 
 .main-container{
   padding: 2% 2%;
   background-color: var(--background);
 }
+
