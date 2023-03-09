@@ -6,8 +6,39 @@ $text-gray: #4f4f4f;
 $border: #e6e6e6;
 $shadow: #b1b1b140;
 
-.main-body{
+.main-body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
+
+    .right-section {
+        .area-section {
+            background-color: $foreground;
+            padding: 1rem 2.5rem;
+            margin-bottom: 1.2rem;
+            border-radius: 12px;
+
+            .location {
+                display: flex;
+                align-items: end;
+
+                .location-icon {
+                    font-size: 1.5rem;
+                    margin-right: 0.5rem;
+                    color: #e35e50;
+                }
+
+                img {
+                    width: 15%;
+                    height: 15%;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                    color: $primary;
+                    margin: 0.02rem;
+                }
+            }
+        }
+    }
 }
