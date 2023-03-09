@@ -1,17 +1,18 @@
+import React from 'react';
 import useData from '../../Hooks/useData';
 import Schedule from '../Schedule/Schedule';
-import './RahmatSection.css';
+import './MagfiratSection.css';
 
-const RahmatSection = () => {
-    const [scheduleData, setScheduleData]=useData();
+const MagfiratSection = () => {
+    const [scheduleData, setScheduleData] = useData();
 
-    let rahmat = scheduleData.filter((singleData)=>{
-        return singleData.category === "rahmat";
+    let rahmat = scheduleData.filter((singleData) => {
+        return singleData.category === "magfirat";
     })
 
     return (
         <div className='main-div'>
-            <h2>10 Days Of Rahmat</h2>
+            <h2>10 Days Of Magfirat</h2>
             <div className="headings">
                 <h3>Ramadan</h3>
                 <h3>Date</h3>
@@ -28,4 +29,4 @@ const RahmatSection = () => {
     );
 };
 
-export default RahmatSection;
+export default MagfiratSection;
