@@ -1,5 +1,7 @@
 $background: #eff2f9;
+$background-transparent: #eff2f9e8;
 $foreground: #fff;
+$foreground-transparent: #ffffffd8;
 $primary: #6a74c9;
 $text-black: #484848;
 $text-gray: #4f4f4f;
@@ -28,7 +30,7 @@ $shadow: #b1b1b140;
 
             .current-time{
                 display: inline-block;
-                background-color: $background;
+                background-color: $background-transparent;
                 color: $text-black;
                 padding: 1% 1.5%;
                 border-radius: 10px;
@@ -71,7 +73,7 @@ $shadow: #b1b1b140;
 
     .top-right {
         width: 30%;
-        background-color: $background;
+        background-color: $background-transparent;
         margin: 2.8% 0;
         border-radius: 20px;
         padding: 2%;
@@ -91,7 +93,7 @@ $shadow: #b1b1b140;
                 padding: 5% 8%;
                 text-align: center;
                 color: $text-black;
-                background: $foreground;
+                background: $foreground-transparent;
                 border-radius: 10px;
 
                 h2 {

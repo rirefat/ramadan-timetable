@@ -20,7 +20,7 @@
 }
 .top-banner .top-left .current-time-section .current-time {
   display: inline-block;
-  background-color: #eff2f9;
+  background-color: rgba(239, 242, 249, 0.9098039216);
   color: #484848;
   padding: 1% 1.5%;
   border-radius: 10px;
@@ -56,7 +56,7 @@
 }
 .top-banner .top-right {
   width: 30%;
-  background-color: #eff2f9;
+  background-color: rgba(239, 242, 249, 0.9098039216);
   margin: 2.8% 0;
   border-radius: 20px;
   padding: 2%;
@@ -75,7 +75,7 @@
   padding: 5% 8%;
   text-align: center;
   color: #484848;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8470588235);
   border-radius: 10px;
 }
 .top-banner .top-right .main .today h2 {
