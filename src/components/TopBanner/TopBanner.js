@@ -2,11 +2,22 @@ import React, { useState } from 'react';
 import useData from '../../Hooks/useData';
 import './TopBanner.css';
 import redDot from '../../img/2-red-dot.gif';
+import CardToday from '../CardToday/CardToday';
+
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { RiErrorWarningFill } from 'react-icons/ri';
 
 const TopBanner = () => {
     const [scheduleData, setScheduleData]=useData();
-    let shortDate = new Date().toLocaleDateString();
-
+    let todaysDate = new Date().toLocaleDateString();
+    let today = scheduleData.filter((singleData)=>{
+        return singleData.shortDate === todaysDate;
+    });
+    let ramadanSerial = today[0]?.serial;
+    let sehri = today[0]?.sehri;
+    let sunrise = today[0]?.sunrise;
+    let ifter = today[0]?.ifter;
+    
     const [time, setTime] = useState('');
     const [day, setDay] = useState('');
     const [date, setDate] = useState('');
@@ -47,16 +58,16 @@ const TopBanner = () => {
                 <h1>Today's Schedule</h1>
                 <div className="main">
                     <div className="today">
-                        <h2>01</h2>
+                        <h2>{ramadanSerial ? ramadanSerial : <BsFillMoonStarsFill></BsFillMoonStarsFill>}</h2>
                         <h3>Ramadan</h3>
                         <p>{date} {month} {year}</p>
                         <p>{day}</p>
                     </div>
 
                     <div className="todays-schedule">
-                        <p>Sehri - <span className="time">00:00 AM</span></p>
-                        <p>Sunrise - <span className="time">00:00 AM</span></p>
-                        <p>Iftar - <span className="time">00:00 AM</span></p>
+                        <p>Sehri - <span className="time">{sehri ? sehri : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
+                        <p>Sunrise - <span className="time">{sunrise ? sunrise : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
+                        <p>Iftar - <span className="time">{ifter ? ifter : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
                     </div>
                 </div>
             </div>
