@@ -5,7 +5,7 @@ import './RahmatSection.css';
 
 const RahmatSection = () => {
     const [scheduleData, setScheduleData]=useData();
-    console.log(scheduleData)
+    // console.log(scheduleData)
 
     // const [datas, setDatas]=useState([]);
     // useEffect(()=>{
@@ -14,6 +14,11 @@ const RahmatSection = () => {
     //         .then(data => setDatas(data))
     // },[])
     // console.log(datas);
+
+    let rahmat = scheduleData.filter((singleData)=>{
+        return singleData.category === "rahmat";
+    })
+
     return (
         <div className='main-div'>
             <h2>10 Days Of Rahmat</h2>
@@ -26,7 +31,7 @@ const RahmatSection = () => {
             </div>
             <div className="schedules">
                 {
-                    scheduleData.map(schedule => <Schedule key={schedule.serial} schedule={schedule}></Schedule>)
+                    rahmat.map(schedule => <Schedule key={schedule.serial} schedule={schedule}></Schedule>)
                 }
             </div>
         </div>
