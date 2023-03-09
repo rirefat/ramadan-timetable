@@ -17,7 +17,7 @@ $shadow: #b1b1b140;
         text-transform: uppercase;
         color: $primary;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .description{
         margin-bottom: 0.8rem;
@@ -29,6 +29,8 @@ $shadow: #b1b1b140;
     p{
         margin: 0;
         color: $text-gray;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
     }
     h4{
         text-transform: uppercase;
