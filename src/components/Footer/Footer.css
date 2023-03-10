@@ -13,4 +13,15 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: #6a74c9;
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */
