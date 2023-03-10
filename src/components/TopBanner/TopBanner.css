@@ -371,4 +371,26 @@
     font-size: 1.45rem !important;
     margin-bottom: 0.5rem;
   }
+}
+@media screen and (max-width: 341px) {
+  .top-banner .top-left .current-time-section {
+    position: absolute !important;
+    top: 35% !important;
+    left: 40%;
+  }
+  .top-banner .top-left h1 {
+    font-size: 1.35rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .top-banner .top-left p {
+    font-size: 0.65rem !important;
+    line-height: 1.25rem !important;
+    margin-bottom: 0 !important;
+  }
+  .top-banner .top-right h1 {
+    font-size: 1.2rem !important;
+  }
+  .top-banner .top-right .main .today h3 {
+    font-size: 1.2rem !important;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */
