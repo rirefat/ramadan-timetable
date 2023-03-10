@@ -30,4 +30,10 @@
   font-size: 1.8rem;
   color: #6a74c9;
   margin: 0.02rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-body {
+    gap: 1.5rem;
+  }
 }/*# sourceMappingURL=MainBody.css.map */

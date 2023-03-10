@@ -28,4 +28,42 @@
 .single-doa h4 {
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .single-doa h3 {
+    font-size: 1.2rem;
+  }
+  .single-doa p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .single-doa {
+    padding: 1.2rem 2.2rem;
+  }
+  .single-doa h3 {
+    font-size: 1rem !important;
+  }
+  .single-doa p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .single-doa {
+    padding: 1rem 1.4rem;
+  }
+  .single-doa p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 745px) {
+  .single-doa {
+    padding: 0.6rem 1rem;
+  }
+  .single-doa p {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+  }
 }/*# sourceMappingURL=Doa.css.map */

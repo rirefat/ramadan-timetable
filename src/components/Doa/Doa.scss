@@ -6,7 +6,7 @@ $text-gray: #4f4f4f;
 $border: #e6e6e6;
 $shadow: #b1b1b140;
 
-.single-doa{
+.single-doa {
     text-align: center;
     background-color: $foreground;
     padding: 2rem 2.5rem;
@@ -14,27 +14,79 @@ $shadow: #b1b1b140;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
-    h3{
+    h3 {
         text-transform: uppercase;
         color: $primary;
         font-weight: 700;
         font-size: 1.2rem;
     }
-    .description{
+
+    .description {
         margin-bottom: 0.8rem;
     }
-    .arabic-doa{
+
+    .arabic-doa {
         font-weight: 800;
         font-size: 1.6rem;
     }
-    p{
+
+    p {
         margin: 0;
         color: $text-gray;
         font-size: 1.1rem;
         line-height: 1.6rem;
     }
-    h4{
+
+    h4 {
         text-transform: uppercase;
         margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .single-doa {
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .single-doa {
+        padding: 1.2rem 2.2rem;
+
+        h3 {
+            font-size: 1rem !important;
+        }
+
+        p {
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .single-doa {
+        padding: 1rem 1.4rem;
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .single-doa {
+        padding: 0.6rem 1rem;
+
+        p {
+            font-size: 0.6rem;
+            line-height: 1.1rem;
+        }
     }
 }

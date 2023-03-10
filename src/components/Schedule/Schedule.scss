@@ -26,3 +26,35 @@ $shadow: #b1b1b140;
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    .schedule{
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .schedule{
+        p{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .schedule{
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .schedule{
+        p{
+            font-size: 0.6rem;
+        }
+    }
+}

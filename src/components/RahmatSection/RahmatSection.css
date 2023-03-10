@@ -25,4 +25,37 @@
   font-weight: 600;
   padding: 6% 2%;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 1250px) {
+  .main-div h2 {
+    font-size: 1.8rem;
+  }
+  .main-div .headings h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .main-div h2 {
+    font-size: 1.6rem;
+  }
+  .main-div .headings h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .main-div h2 {
+    font-size: 1.5rem;
+  }
+  .main-div .headings h3 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 745px) {
+  .main-div h2 {
+    font-size: 1.3rem;
+  }
+  .main-div .headings h3 {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=RahmatSection.css.map */
