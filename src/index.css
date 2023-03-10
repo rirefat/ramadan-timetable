@@ -1,3 +1,16 @@
+:root{
+  --background: #eff2f9;
+  --foreground: #fff;
+  --primary: #6a74c9;
+  --text-black: #484848;
+  --text-gray: #4f4f4f;
+  --border: #e6e6e6;
+  --shadow: #b1b1b140;
+
+  --font-family-1: 'Quicksand', sans-serif;
+  --font-family-2: 'Dancing Script', cursive;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap');
 
 body {
@@ -10,4 +23,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bab9b9; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#060E32, #6a74c9); 
+  border: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5965ca; 
 }
