@@ -282,4 +282,68 @@
   .top-right .main .todays-schedule p {
     font-size: 0.65rem !important;
   }
+}
+@media screen and (max-width: 556px) {
+  .top-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative !important;
+    padding: 8% 0;
+  }
+  .top-banner .top-left {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .top-banner .top-left .current-time-section {
+    position: absolute !important;
+    top: 37%;
+    left: 40%;
+  }
+  .top-banner .top-left .current-time-section h4 {
+    font-size: 0.8rem !important;
+  }
+  .top-banner .top-left h1 {
+    font-size: 2rem !important;
+  }
+  .top-banner .top-left h3 {
+    font-size: 0.75rem !important;
+  }
+  .top-banner .top-left .current-time {
+    font-size: 0.6rem !important;
+    padding: 0 1.2rem;
+  }
+  .top-banner .top-left p {
+    font-size: 0.8rem !important;
+    line-height: 1.55rem !important;
+    margin-bottom: 20px !important;
+  }
+  .top-banner .top-right {
+    width: 75%;
+    margin-top: 2.5rem;
+  }
+  .top-banner .top-right h1 {
+    font-size: 1.4rem !important;
+    text-align: center;
+  }
+  .top-banner .top-right .main {
+    gap: 0.6rem !important;
+  }
+  .top-banner .top-right .main .today {
+    padding: 10% 5% !important;
+  }
+  .top-banner .top-right .main .today h2 {
+    font-size: 2rem !important;
+  }
+  .top-banner .top-right .main .today h3 {
+    font-size: 1.3rem !important;
+  }
+  .top-banner .top-right .main .today p {
+    font-size: 0.8rem !important;
+  }
+  .top-banner .top-right .main .todays-schedule p {
+    font-size: 0.8rem !important;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */
