@@ -66,3 +66,19 @@ $shadow: #b1b1b140;
         }
     }
 }
+
+@media screen and (max-width: 550px) {
+    .schedule{
+        p{
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .schedule{
+        p{
+            font-size: 0.5rem;
+        }
+    }
+}
