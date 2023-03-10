@@ -58,4 +58,12 @@
   .main-div .headings h3 {
     font-size: 0.8rem;
   }
+}
+@media screen and (max-width: 440px) {
+  .main-div h2 {
+    font-size: 1.1rem;
+  }
+  .main-div .headings h3 {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=RahmatSection.css.map */
