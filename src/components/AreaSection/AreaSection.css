@@ -1,0 +1,78 @@
+.area-section {
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.area-section .location {
+  display: flex;
+  align-items: end;
+}
+.area-section .location .location-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #e35e50;
+}
+.area-section .location img {
+  width: 15%;
+  height: 15%;
+}
+.area-section .location h3 {
+  font-size: 1.8rem;
+  color: #6a74c9;
+  margin: 0.02rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .location img {
+    width: 15%;
+    height: 15%;
+  }
+  .location h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .location img {
+    width: 15%;
+    height: 15%;
+  }
+  .location h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .location img {
+    width: 20% !important;
+    height: 20% !important;
+  }
+  .location h3 {
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 778px) {
+  .location img {
+    width: 20% !important;
+    height: 20% !important;
+  }
+  .location h3 {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .area-section {
+    padding: 0.5rem 2.5rem;
+  }
+  .area-section .location img {
+    width: 15% !important;
+    height: 15% !important;
+  }
+  .area-section .location h3 {
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+}/*# sourceMappingURL=AreaSection.css.map */

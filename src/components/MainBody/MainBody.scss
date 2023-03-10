@@ -11,38 +11,14 @@ $shadow: #b1b1b140;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
 
+    .left-section {
+        .location-single-column{
+            display: none;
+        }        
+    }
     .right-section {
-        .area-section {
-            background-color: $foreground;
-            padding: 1rem 2.5rem;
-            margin-bottom: 1.2rem;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
-            .location {
-                display: flex;
-                align-items: end;
-
-                .location-icon {
-                    font-size: 1.5rem;
-                    margin-right: 0.5rem;
-                    color: #e35e50;
-                }
-
-                img {
-                    width: 15%;
-                    height: 15%;
-                }
-
-                h3 {
-                    font-size: 1.8rem;
-                    color: $primary;
-                    margin: 0.02rem;
-                }
-            }
+        .location-single-column{
+            display: block;
         }
     }
 }
@@ -57,7 +33,16 @@ $shadow: #b1b1b140;
     .main-body {
         grid-template-columns: 1fr !important;
 
-        .right-section{
+        .left-section {
+            .location-single-column{
+                display: block;
+            }        
+        }
+        .right-section {
+            .location-double-column{
+                display: none !important;
+            }
+
             .doa-section{
                 display: flex;
                 gap: 1rem;
