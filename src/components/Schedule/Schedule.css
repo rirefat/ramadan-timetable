@@ -36,4 +36,9 @@
   .schedule p {
     font-size: 0.6rem;
   }
+}
+@media screen and (max-width: 650px) {
+  .schedule p {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=Schedule.css.map */
