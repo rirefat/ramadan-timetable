@@ -18,6 +18,7 @@
 .single-doa .arabic-doa {
   font-weight: 800;
   font-size: 1.6rem;
+  line-height: 2.3rem;
 }
 .single-doa p {
   margin: 0;
@@ -33,6 +34,9 @@
 @media screen and (max-width: 1250px) {
   .single-doa h3 {
     font-size: 1.2rem;
+  }
+  .single-doa .arabic-doa {
+    font-size: 1.4rem;
   }
   .single-doa p {
     font-size: 1rem;
@@ -61,6 +65,10 @@
 @media screen and (max-width: 745px) {
   .single-doa {
     padding: 0.6rem 1rem;
+  }
+  .single-doa .arabic-doa {
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
   .single-doa p {
     font-size: 0.6rem;

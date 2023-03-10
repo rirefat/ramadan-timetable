@@ -56,5 +56,12 @@ $shadow: #b1b1b140;
 @media screen and (max-width: 650px) {
     .main-body {
         grid-template-columns: 1fr !important;
+
+        .right-section{
+            .doa-section{
+                display: flex;
+                gap: 1rem;
+            }
+        }
     }
 }

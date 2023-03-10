@@ -41,4 +41,8 @@
   .main-body {
     grid-template-columns: 1fr !important;
   }
+  .main-body .right-section .doa-section {
+    display: flex;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=MainBody.css.map */

@@ -28,6 +28,7 @@ $shadow: #b1b1b140;
     .arabic-doa {
         font-weight: 800;
         font-size: 1.6rem;
+        line-height: 2.3rem;
     }
 
     p {
@@ -47,6 +48,10 @@ $shadow: #b1b1b140;
     .single-doa {
         h3 {
             font-size: 1.2rem;
+        }
+
+        .arabic-doa {
+            font-size: 1.4rem;
         }
 
         p {
@@ -83,6 +88,11 @@ $shadow: #b1b1b140;
 @media screen and (max-width: 745px) {
     .single-doa {
         padding: 0.6rem 1rem;
+
+        .arabic-doa {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
 
         p {
             font-size: 0.6rem;
