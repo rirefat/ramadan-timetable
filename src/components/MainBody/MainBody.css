@@ -36,4 +36,9 @@
   .main-body {
     gap: 1.5rem;
   }
+}
+@media screen and (max-width: 650px) {
+  .main-body {
+    grid-template-columns: 1fr !important;
+  }
 }/*# sourceMappingURL=MainBody.css.map */

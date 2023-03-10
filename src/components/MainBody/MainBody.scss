@@ -24,7 +24,7 @@ $shadow: #b1b1b140;
 
             .location {
                 display: flex;
-                align-items: end;     
+                align-items: end;
 
                 .location-icon {
                     font-size: 1.5rem;
@@ -48,7 +48,13 @@ $shadow: #b1b1b140;
 }
 
 @media screen and (max-width: 1000px) {
-    .main-body{
+    .main-body {
         gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-body {
+        grid-template-columns: 1fr !important;
     }
 }
