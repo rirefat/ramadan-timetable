@@ -357,6 +357,18 @@ $shadow: #b1b1b140;
     }
 }
 
+@media screen and (max-width: 690px) {
+    .top-right{
+        .main{
+            .today{
+                h3{
+                    font-size: 0.9rem !important;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .top-left {
         h1 {
