@@ -219,4 +219,67 @@
   .top-right .main .todays-schedule p {
     font-size: 0.65rem !important;
   }
+}
+@media screen and (max-width: 768px) {
+  .top-left h1 {
+    font-size: 2.3rem !important;
+  }
+  .top-right h1 {
+    font-size: 1.1rem !important;
+  }
+  .top-right .main {
+    gap: 0.5rem !important;
+  }
+  .top-right .main .today {
+    padding: 10% !important;
+  }
+  .top-right .main .today h2 {
+    font-size: 1.8rem !important;
+  }
+  .top-right .main .today h3 {
+    font-size: 1rem !important;
+  }
+  .top-right .main .today p {
+    font-size: 0.75rem !important;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 0.75rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .top-left h1 {
+    font-size: 1.7rem !important;
+  }
+  .top-left h3 {
+    font-size: 0.6rem !important;
+  }
+  .top-left .current-time {
+    font-size: 0.6rem !important;
+  }
+  .top-left p {
+    font-size: 0.6rem !important;
+    line-height: 1.2rem !important;
+    margin-bottom: 20px !important;
+  }
+  .top-right h1 {
+    font-size: 0.8rem !important;
+  }
+  .top-right .main {
+    gap: 0.6rem !important;
+  }
+  .top-right .main .today {
+    padding: 10% 5% !important;
+  }
+  .top-right .main .today h2 {
+    font-size: 1.5rem !important;
+  }
+  .top-right .main .today h3 {
+    font-size: 0.8rem !important;
+  }
+  .top-right .main .today p {
+    font-size: 0.65rem !important;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 0.65rem !important;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */

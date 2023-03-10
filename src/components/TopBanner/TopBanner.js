@@ -66,7 +66,7 @@ const TopBanner = () => {
 
                     <div className="todays-schedule">
                         <p>Sehri - <span className="time">{sehri ? sehri : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
-                        <p>Sunrise - <span className="time">{sunrise ? sunrise : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
+                        <p>Sunrise - <span className="time sunrise-time">{sunrise ? sunrise : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
                         <p>Iftar - <span className="time">{ifter ? ifter : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
                     </div>
                 </div>
