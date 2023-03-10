@@ -360,4 +360,15 @@
   .top-banner .top-left h3 {
     font-size: 0.55rem !important;
   }
+}
+@media screen and (max-width: 375px) {
+  .top-banner .top-left .current-time-section {
+    position: absolute !important;
+    top: 40% !important;
+    left: 40%;
+  }
+  .top-banner .top-left h1 {
+    font-size: 1.45rem !important;
+    margin-bottom: 0.5rem;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */

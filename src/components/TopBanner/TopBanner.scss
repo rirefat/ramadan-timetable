@@ -523,3 +523,20 @@ $shadow: #b1b1b140;
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .top-banner {
+        .top-left {
+            .current-time-section {
+                position: absolute !important;
+                top: 40% !important;
+                left: 40%;
+            }
+
+            h1{
+                font-size: 1.45rem !important;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
