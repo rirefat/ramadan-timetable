@@ -23,7 +23,7 @@ $shadow: #b1b1b140;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
     .top-left {
-        width: 50%;
+        width: 60%;
 
         .current-time-section{
             display: flex;
@@ -133,6 +133,164 @@ $shadow: #b1b1b140;
                     .time{
                         font-weight: 500;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .top-left{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.1rem !important;
+            line-height: 1.5rem;
+            margin-bottom: 10px !important;
+        }
+    }
+    .top-right{
+        h1{
+            font-size: 1.8rem;
+        }
+
+        .main{
+            .today{
+                h2{
+                    font-size: 2.8rem;
+                }
+                h3{
+                    font-size: 1.2rem;
+                }
+            }
+
+            .todays-schedule{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .top-left{
+        h1{
+            font-size: 3.3rem !important;
+        }
+        h3{
+            font-size: 1.1rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+            line-height: 1.4rem;
+            margin-bottom: 10px !important;
+        }
+    }
+    .top-right{
+        h1{
+            font-size: 1.6rem;
+        }
+
+        .main{
+            .today{
+                h2{
+                    font-size: 2.6rem !important;
+                }
+                h3{
+                    font-size: 1.3rem !important;
+                }
+            }
+
+            .todays-schedule{
+                p{
+                    font-size: 0.95rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .top-left{
+        h1{
+            font-size: 3.15rem !important;
+        }
+        h3{
+            font-size: 1.05rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+            line-height: 1.3rem;
+            margin-bottom: 20px !important;
+        }
+    }
+    .top-right{
+        h1{
+            font-size: 1.5rem;
+        }
+
+        .main{
+            .today{
+                h2{
+                    font-size: 2.4rem !important;
+                }
+                h3{
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .todays-schedule{
+                p{
+                    font-size: 0.85rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-left{
+        h1{
+            font-size: 2.5rem !important;
+        }
+        h3{
+            font-size: 0.9rem !important;
+        }
+        .current-time{
+            font-size: 0.9rem !important;
+        }
+        p{
+            font-size: 0.8rem !important;
+            line-height: 1.5rem !important;
+            margin-bottom: 20px !important;
+        }
+    }
+    .top-right{
+        h1{
+            font-size: 1.2rem !important;
+        }
+
+        .main{
+            gap: 0.7rem !important;
+            .today{
+                padding: 10% !important;
+
+                h2{
+                    font-size: 1.8rem !important;
+                }
+                h3{
+                    font-size: 1rem !important;
+                }
+                p{
+                    font-size: 0.85rem !important;
+                }
+            }
+
+            .todays-schedule{
+                p{
+                    font-size: 0.65rem !important;
                 }
             }
         }

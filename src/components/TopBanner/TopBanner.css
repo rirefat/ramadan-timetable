@@ -13,7 +13,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .top-banner .top-left {
-  width: 50%;
+  width: 60%;
 }
 .top-banner .top-left .current-time-section {
   display: flex;
@@ -109,4 +109,114 @@
 }
 .top-banner .top-right .main .todays-schedule p .time {
   font-weight: 500;
+}
+
+@media screen and (max-width: 1240px) {
+  .top-left h1 {
+    font-size: 2rem;
+  }
+  .top-left p {
+    font-size: 1.1rem !important;
+    line-height: 1.5rem;
+    margin-bottom: 10px !important;
+  }
+  .top-right h1 {
+    font-size: 1.8rem;
+  }
+  .top-right .main .today h2 {
+    font-size: 2.8rem;
+  }
+  .top-right .main .today h3 {
+    font-size: 1.2rem;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .top-left h1 {
+    font-size: 3.3rem !important;
+  }
+  .top-left h3 {
+    font-size: 1.1rem !important;
+  }
+  .top-left p {
+    font-size: 1rem !important;
+    line-height: 1.4rem;
+    margin-bottom: 10px !important;
+  }
+  .top-right h1 {
+    font-size: 1.6rem;
+  }
+  .top-right .main .today h2 {
+    font-size: 2.6rem !important;
+  }
+  .top-right .main .today h3 {
+    font-size: 1.3rem !important;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 0.95rem !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .top-left h1 {
+    font-size: 3.15rem !important;
+  }
+  .top-left h3 {
+    font-size: 1.05rem !important;
+  }
+  .top-left p {
+    font-size: 1rem !important;
+    line-height: 1.3rem;
+    margin-bottom: 20px !important;
+  }
+  .top-right h1 {
+    font-size: 1.5rem;
+  }
+  .top-right .main .today h2 {
+    font-size: 2.4rem !important;
+  }
+  .top-right .main .today h3 {
+    font-size: 1.2rem !important;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 0.85rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .top-left h1 {
+    font-size: 2.5rem !important;
+  }
+  .top-left h3 {
+    font-size: 0.9rem !important;
+  }
+  .top-left .current-time {
+    font-size: 0.9rem !important;
+  }
+  .top-left p {
+    font-size: 0.8rem !important;
+    line-height: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
+  .top-right h1 {
+    font-size: 1.2rem !important;
+  }
+  .top-right .main {
+    gap: 0.7rem !important;
+  }
+  .top-right .main .today {
+    padding: 10% !important;
+  }
+  .top-right .main .today h2 {
+    font-size: 1.8rem !important;
+  }
+  .top-right .main .today h3 {
+    font-size: 1rem !important;
+  }
+  .top-right .main .today p {
+    font-size: 0.85rem !important;
+  }
+  .top-right .main .todays-schedule p {
+    font-size: 0.65rem !important;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */
