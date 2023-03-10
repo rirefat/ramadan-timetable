@@ -346,4 +346,18 @@
   .top-banner .top-right .main .todays-schedule p {
     font-size: 0.8rem !important;
   }
+}
+@media screen and (max-width: 454px) {
+  .top-banner .top-left .current-time-section {
+    position: absolute !important;
+    top: 40% !important;
+    left: 40%;
+  }
+  .top-banner .top-left h1 {
+    font-size: 1.6rem !important;
+    margin-bottom: 0.5rem;
+  }
+  .top-banner .top-left h3 {
+    font-size: 0.55rem !important;
+  }
 }/*# sourceMappingURL=TopBanner.css.map */
