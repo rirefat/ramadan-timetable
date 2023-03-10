@@ -24,6 +24,8 @@
   background-color: rgba(239, 242, 249, 0.9098039216);
   color: #484848;
   padding: 1% 1.5%;
+  min-width: 5rem;
+  text-align: center;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
