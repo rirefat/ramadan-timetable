@@ -100,7 +100,7 @@ $shadow: #b1b1b140;
                 color: $text-black;
                 background: $foreground-transparent;
                 border-radius: 10px;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
                 h2 {
                     color: $primary;
@@ -130,7 +130,7 @@ $shadow: #b1b1b140;
                     border-radius: 10px;
                     font-size: 1.15rem;
                     margin: 4% 0;
-                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
                     .time {
                         font-weight: 500;
