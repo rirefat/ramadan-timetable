@@ -28,5 +28,9 @@
   .main-body .right-section .doa-section {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
   }
 }/*# sourceMappingURL=MainBody.css.map */
