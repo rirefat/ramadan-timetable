@@ -15,7 +15,7 @@ const TopBanner = () => {
     });
     let ramadanSerial = today[0]?.serial;
     let sehri = today[0]?.sehri;
-    let sunrise = today[0]?.sunrise;
+    let fajar = today[0]?.fajar;
     let ifter = today[0]?.ifter;
     
     const [time, setTime] = useState('');
@@ -66,7 +66,7 @@ const TopBanner = () => {
 
                     <div className="todays-schedule">
                         <p>Sehri - <span className="time">{sehri ? sehri : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
-                        <p>Sunrise - <span className="time sunrise-time">{sunrise ? sunrise : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
+                        <p>Fajar - <span className="time sunrise-time">{fajar ? fajar : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
                         <p>Iftar - <span className="time">{ifter ? ifter : <RiErrorWarningFill></RiErrorWarningFill>}</span></p>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ const MainBody = () => {
                     <AreaSection></AreaSection>
                 </div>
                 <RahmatSection></RahmatSection>
-                <MagfiratSection></MagfiratSection>
+                <MagfiratSection></MagfiratSection>   
                 <NazwatSection></NazwatSection>
             </div>
 
