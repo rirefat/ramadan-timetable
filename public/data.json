@@ -2,9 +2,9 @@
     {
         "serial": 1,
         "category": "rahmat",
-        "date": "24 March 2023",
-        "shortDate": "3/24/2023",
-        "day": "Friday",
+        "date": "12 March 2024",
+        "shortDate": "3/12/2024",
+        "day": "Tuesday",
         "sehri": "4:39 AM",      
         "fajar": "4:45 AM",
         "ifter": "6:14 PM"
@@ -12,9 +12,9 @@
     {
         "serial": 2,
         "category": "rahmat",
-        "date": "25 March 2023",
-        "shortDate": "3/25/2023",
-        "day": "Saturday",
+        "date": "13 March 2024",
+        "shortDate": "3/12/2024",
+        "day": "Wednesday",
         "sehri": "4:38 AM",      
         "fajar": "4:44 AM",
         "ifter": "6:15 PM"
@@ -22,9 +22,9 @@
     {
         "serial": 3,
         "category": "rahmat",
-        "date": "26 March 2023",
-        "shortDate": "3/26/2023",
-        "day": "Sunday",
+        "date": "14 March 2024",
+        "shortDate": "3/14/2024",
+        "day": "Thursday",
         "sehri": "4:36 AM",      
         "fajar": "4:42 AM",
         "ifter": "6:15 PM"
@@ -32,9 +32,9 @@
     {
         "serial": 4,
         "category": "rahmat",
-        "date": "27 March 2023",
-        "shortDate": "3/27/2023",
-        "day": "Monday",
+        "date": "15 March 2025",
+        "shortDate": "3/15/2024",
+        "day": "Friday",
         "sehri": "4:35 AM",      
         "fajar": "4:41 AM",
         "ifter": "6:16 PM"
@@ -42,9 +42,9 @@
     {
         "serial": 5,
         "category": "rahmat",
-        "date": "28 March 2023",
-        "shortDate": "3/28/2023",
-        "day": "Tuesday",
+        "date": "16 March 2024",
+        "shortDate": "3/16/2024",
+        "day": "Saturday",
         "sehri": "4:34 AM",      
         "fajar": "4:40 AM",
         "ifter": "6:16 PM"
@@ -52,9 +52,9 @@
     {
         "serial": 6,
         "category": "rahmat",
-        "date": "29 March 2023",
-        "shortDate": "3/29/2023",
-        "day": "Wednesday",
+        "date": "17 March 2027",
+        "shortDate": "3/17/2024",
+        "day": "Sunday",
         "sehri": "4:33 AM",      
         "fajar": "4:39 AM",
         "ifter": "6:17 PM"
@@ -62,9 +62,9 @@
     {
         "serial": 7,
         "category": "rahmat",
-        "date": "30 March 2023",
-        "shortDate": "3/30/2023",
-        "day": "Thursday",
+        "date": "18 March 2024",
+        "shortDate": "3/18/2024",
+        "day": "Monday",
         "sehri": "4:31 AM",      
         "fajar": "4:37 AM",
         "ifter": "6:17 PM"
@@ -72,9 +72,9 @@
     {
         "serial": 8,
         "category": "rahmat",
-        "date": "31 March 2023",
-        "shortDate": "3/31/2023",
-        "day": "Friday",
+        "date": "19 March 2024",
+        "shortDate": "3/19/2024",
+        "day": "Tuesday",
         "sehri": "4:30 AM",      
         "fajar": "4:36 AM",
         "ifter": "6:18 PM"
@@ -82,9 +82,9 @@
     {
         "serial": 9,
         "category": "rahmat",
-        "date": "01 April 2023",
-        "shortDate": "4/1/2023",
-        "day": "Saturday",
+        "date": "20 March 2024",
+        "shortDate": "3/20/2024",
+        "day": "Wednesday",
         "sehri": "4:29 AM",      
         "fajar": "4:35 AM",
         "ifter": "6:18 PM"
@@ -92,9 +92,9 @@
     {
         "serial": 10,
         "category": "rahmat",
-        "date": "02 April 2023",
-        "shortDate": "4/2/2023",
-        "day": "Sunday",
+        "date": "21 March 2024",
+        "shortDate": "3/21/2024",
+        "day": "Thursday",
         "sehri": "4:28 AM",      
         "fajar": "4:34 AM",
         "ifter": "6:19 PM"
@@ -104,7 +104,7 @@
         "category": "magfirat",
         "date": "03 April 2023",
         "shortDate": "4/3/2023",
-        "day": "Monday",
+        "day": "Friday",
         "sehri": "4:27 AM",      
         "fajar": "4:33 AM",
         "ifter": "6:19 PM"
@@ -114,7 +114,7 @@
         "category": "magfirat",
         "date": "04 April 2023",
         "shortDate": "4/4/2023",
-        "day": "Tuesday",
+        "day": "Saturday",
         "sehri": "4:26 AM",      
         "fajar": "4:32 AM",
         "ifter": "6:19 PM"
@@ -124,7 +124,7 @@
         "category": "magfirat",
         "date": "05 April 2023",
         "shortDate": "4/5/2023",
-        "day": "Wednesday",
+        "day": "Sunday",
         "sehri": "4:24 AM",      
         "fajar": "4:30 AM",
         "ifter": "6:20 PM"
@@ -134,7 +134,7 @@
         "category": "magfirat",
         "date": "06 April 2023",
         "shortDate": "4/6/2023",
-        "day": "Thursday",
+        "day": "Monday",
         "sehri": "4:24 AM",      
         "fajar": "4:30 AM",
         "ifter": "6:20 PM"
@@ -144,7 +144,7 @@
         "category": "magfirat",
         "date": "07 April 2023",
         "shortDate": "4/7/2023",
-        "day": "Friday",
+        "day": "Tuesday",
         "sehri": "4:23 AM",      
         "fajar": "4:29 AM",
         "ifter": "6:21 PM"
@@ -154,7 +154,7 @@
         "category": "magfirat",
         "date": "08 April 2023",
         "shortDate": "4/8/2023",
-        "day": "Saturday",
+        "day": "Wednesday",
         "sehri": "4:22 AM",      
         "fajar": "4:28 AM",
         "ifter": "6:21 PM"
@@ -164,7 +164,7 @@
         "category": "magfirat",
         "date": "09 April 2023",
         "shortDate": "4/9/2023",
-        "day": "Sunday",
+        "day": "Thursday",
         "sehri": "4:21 AM",      
         "fajar": "4:27 AM",
         "ifter": "6:21 PM"
@@ -174,7 +174,7 @@
         "category": "magfirat",
         "date": "10 April 2023",
         "shortDate": "4/10/2023",
-        "day": "Monday",
+        "day": "Friday",
         "sehri": "4:20 AM",      
         "fajar": "4:26 AM",
         "ifter": "6:22 PM"
@@ -184,7 +184,7 @@
         "category": "magfirat",
         "date": "11 April 2023",
         "shortDate": "4/11/2023",
-        "day": "Tuesday",
+        "day": "Saturday",
         "sehri": "4:19 AM",      
         "fajar": "4:25 AM",
         "ifter": "6:22 PM"
@@ -194,7 +194,7 @@
         "category": "magfirat",
         "date": "12 April 2023",
         "shortDate": "4/12/2023",
-        "day": "Wednesday",
+        "day": "Sunday",
         "sehri": "4:18 AM",      
         "fajar": "4:24 AM",
         "ifter": "6:23 PM"
@@ -204,7 +204,7 @@
         "category": "nazwat",
         "date": "13 April 2023",
         "shortDate": "4/13/2023",
-        "day": "Thursday",
+        "day": "Monday",
         "sehri": "4:17 AM",      
         "fajar": "4:23 AM",
         "ifter": "6:23 PM"
@@ -214,7 +214,7 @@
         "category": "nazwat",
         "date": "14 April 2023",
         "shortDate": "4/14/2023",
-        "day": "Friday",
+        "day": "Tuesday",
         "sehri": "4:15 AM",      
         "fajar": "4:21 AM",
         "ifter": "6:23 PM"
@@ -224,7 +224,7 @@
         "category": "nazwat",
         "date": "15 April 2023",
         "shortDate": "4/15/2023",
-        "day": "Saturday",
+        "day": "Wednesday",
         "sehri": "4:14 AM",      
         "fajar": "4:20 AM",
         "ifter": "6:24 PM"
@@ -234,7 +234,7 @@
         "category": "nazwat",
         "date": "16 April 2023",
         "shortDate": "4/16/2023",
-        "day": "Sunday",
+        "day": "Thursday",
         "sehri": "4:13 AM",      
         "fajar": "4:19 AM",
         "ifter": "6:24 PM"
@@ -244,7 +244,7 @@
         "category": "nazwat",
         "date": "17 April 2023",
         "shortDate": "4/17/2023",
-        "day": "Monday",
+        "day": "Friday",
         "sehri": "4:12 AM",      
         "fajar": "4:18 AM",
         "ifter": "6:24 PM"
@@ -254,7 +254,7 @@
         "category": "nazwat",
         "date": "18 April 2023",
         "shortDate": "4/18/2023",
-        "day": "Tuesday",
+        "day": "Saturday",
         "sehri": "4:11 AM",      
         "fajar": "4:17 AM",
         "ifter": "6:25 PM"
@@ -264,7 +264,7 @@
         "category": "nazwat",
         "date": "19 April 2023",
         "shortDate": "4/19/2023",
-        "day": "Wednesday",
+        "day": "Sunday",
         "sehri": "4:10 AM",      
         "fajar": "4:16 AM",
         "ifter": "6:25 PM"
@@ -274,7 +274,7 @@
         "category": "nazwat",
         "date": "20 April 2023",
         "shortDate": "4/20/2023",
-        "day": "Thursday",
+        "day": "Monday",
         "sehri": "4:09 AM",      
         "fajar": "4:15 AM",
         "ifter": "6:26 PM"
@@ -284,7 +284,7 @@
         "category": "nazwat",
         "date": "21 April 2023",
         "shortDate": "4/21/2023",
-        "day": "Friday",
+        "day": "Tuesday",
         "sehri": "4:08 AM",      
         "fajar": "4:14 AM",
         "ifter": "6:26 PM"
@@ -294,7 +294,7 @@
         "category": "nazwat",
         "date": "22 April 2023",
         "shortDate": "4/22/2023",
-        "day": "Saturday",
+        "day": "Wednesday",
         "sehri": "4:07 AM",      
         "fajar": "4:13 AM",
         "ifter": "6:27 PM"
