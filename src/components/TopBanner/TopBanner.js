@@ -8,16 +8,20 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { RiErrorWarningFill } from 'react-icons/ri';
 
 const TopBanner = () => {
-    const [scheduleData, setScheduleData]=useData();
+    const [scheduleData, setScheduleData] = useData();
+    // console.log(scheduleData);
+
     let todaysDate = new Date().toLocaleDateString();
-    let today = scheduleData.filter((singleData)=>{
+    let today = scheduleData.filter((singleData) => {
         return singleData.shortDate === todaysDate;
     });
+
+    // console.log(today)
     let ramadanSerial = today[0]?.serial;
     let sehri = today[0]?.sehri;
     let fajar = today[0]?.fajar;
     let ifter = today[0]?.ifter;
-    
+
     const [time, setTime] = useState('');
     const [day, setDay] = useState('');
     const [date, setDate] = useState('');
@@ -42,7 +46,7 @@ const TopBanner = () => {
         setMonth(monthList[currentMonth]);
         setYear(currentYear);
     });
- 
+
     return (
         <div className='top-banner'>
             <div className="top-left">

@@ -8,11 +8,11 @@ import ScrollToTop from 'react-scroll-to-top';
 const App = () => {
   return (
     <div className='main-container'>
-      <TopBanner></TopBanner>
-      <MainBody></MainBody>
-      <Footer></Footer>
-
-      <ScrollToTop smooth color="#6a74c9" width="15" height="15"/>
+      <TopBanner />
+      <MainBody />
+      <Footer />
+      
+      <ScrollToTop smooth color="#6a74c9" width="15" height="15" />
     </div>
   );
 };
