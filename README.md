@@ -195,7 +195,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 **Rafiul Islam Refat**  
 - Portfolio: [rirefat.netlify.app](https://rirefat.netlify.app/)  
 - Email: [rirefat.official@gmail.com](mailto:rirefat.official@gmail.com)  
-- GitHub: [@ri-refat](https://github.com/ri-refat)
+- GitHub: [@rirefat](https://github.com/rirefat)
 
 ---
 
