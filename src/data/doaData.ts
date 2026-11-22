@@ -1,0 +1,28 @@
+import { DoaItem } from '@/types';
+
+export const DOA_DATA: DoaItem[] = [
+  {
+    serial: 1,
+    title: "Ramadan Doa for Fasting",
+    description: "This is the dua for opening fast (or dua for keeping fast), which is what we called Sahur (Sahoor). The dua in Arabic is as follows:",
+    arabic_doa: "وَبِصَوْمِ غَدٍ نَّوَيْتُ مِنْ شَهْرِ رَمَضَانَ",
+    transliteration: "Wa bisawmi ghadinn nawaiytu min shahri Ramadan. [Source: Abu Dawud]",
+    translate: "I intend to keep the fast for tomorrow in the month of Ramadan"
+  },
+  {
+    serial: 2,
+    title: "Ramadan Doa for Iftar",
+    description: "This is the dua for ending fast (or dua for keeping fast), which is what we called Iftar. The dua in Arabic is as follows:",
+    arabic_doa: "اللَّهُمَّ اِنِّى لَكَ صُمْتُ وَبِكَ امنْتُ وَعَليْكَ تَوَكّلتُ وَ عَلى رِزْقِكَ اَفْطَرْتُ",
+    transliteration: "Allahumma inni laka sumtu wa bika aamantu wa alayka tawakkaltu wa ala rizq-ika-aftartu",
+    translate: "O Allah! I fasted for You and I believe in You and I put my trust in You and I break my fast with Your sustenance"
+  },
+  {
+    serial: 3,
+    title: "Istighfar",
+    description: "This is the doa for seeking forgiveness.",
+    arabic_doa: "أسْتَغْفِرُ اللهَ رَبي مِنْ كُلِ ذَنبٍ وَأتُوبُ إلَيهِ",
+    transliteration: "Astaghfirullah rabbi min kulli zambiyon wa atoobu ilaiyh",
+    translate: "I seek the forgiveness of Allah the Mighty, Whom there is none worthy of worship except Him, The Living, The Eternal, and I repent unto Him"
+  }
+];
