@@ -3,7 +3,7 @@ import AreaSection from '../AreaSection/AreaSection';
 import RahmatSection from '../RahmatSection/RahmatSection';
 import MagfiratSection from '../MagfiratSection/MagfiratSection';
 import NazwatSection from '../NazwatSection/NazwatSection';
-import Doa from '../Doa/Doa';
+import DoaSection from '../Doa/DoaSection';
 import { ScheduleItem, DoaItem } from '@/types';
 
 interface MainBodyProps {
@@ -29,9 +29,7 @@ const MainBody: React.FC<MainBodyProps> = ({ scheduleData, doaData }) => {
         </div>
 
         <div className="doa-section">
-          {
-            doaData.map(singleDoa => <Doa key={singleDoa.serial} singleDoa={singleDoa} />)
-          }
+          <DoaSection doaData={doaData} />
         </div>
       </div>
     </div>

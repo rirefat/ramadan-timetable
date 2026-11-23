@@ -488,6 +488,11 @@ body {
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
 }
+.main-body .right-section {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
 .main-body .left-section .location-single-column {
   display: none;
 }
@@ -762,86 +767,208 @@ body {
 /* ==========================================================================
    Doa Card Styles
    ========================================================================== */
-.single-doa {
-  text-align: center;
+.doa-container {
+  width: 100%;
+}
+
+.doa-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+  scrollbar-width: none;
+}
+.doa-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.doa-nav-btn {
+  padding: 0.45rem 0.85rem;
+  border-radius: 20px;
+  border: 1px solid #d5dbed;
   background-color: #fff;
-  padding: 2rem 2.5rem;
+  color: #484848;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.doa-nav-btn:hover {
+  border-color: #6a74c9;
+  color: #6a74c9;
+}
+.doa-nav-btn.active {
+  background-color: #6a74c9;
+  color: #fff;
+  border-color: #6a74c9;
+  box-shadow: 0 2px 6px rgba(106, 116, 201, 0.35);
+}
+
+.single-doa {
+  text-align: left;
+  background-color: #fff;
+  padding: 1.5rem 1.8rem;
   margin-bottom: 1.2rem;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 1px solid #edf0f7;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px -1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.single-doa h3.title {
+.single-doa:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 16px -2px, rgba(0, 0, 0, 0.06) 0px 4px 6px -1px;
+}
+
+.single-doa .doa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.single-doa .doa-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.single-doa .doa-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: #6a74c9;
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 0;
-  margin-bottom: 0.8rem;
+  letter-spacing: 0.05rem;
 }
+.single-doa h3.title {
+  color: #2e384d;
+  font-weight: 700;
+  font-size: 1.18rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.single-doa .copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #e0e5f2;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.single-doa .copy-button:hover {
+  background-color: #6a74c9;
+  color: #fff;
+  border-color: #6a74c9;
+}
+.single-doa .copy-button.copied {
+  background-color: #10b981;
+  color: #fff;
+  border-color: #10b981;
+}
+
 .single-doa .description {
-  margin-bottom: 0.8rem;
+  margin: 0 0 1rem 0;
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.single-doa .arabic-box {
+  background-color: #f4f6fb;
+  border: 1px solid #e4e9f5;
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.1rem;
+  text-align: right;
 }
 .single-doa .arabic-doa {
-  font-weight: 800;
-  font-size: 1.6rem;
-  line-height: 2.3rem;
-  margin: 1rem 0;
-}
-.single-doa p {
-  margin: 0;
-  color: #4f4f4f;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
-}
-.single-doa h4.sub-title {
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
-  margin-top: 1rem;
+  font-family: 'Amiri', 'Traditional Arabic', serif;
   font-weight: 700;
+  font-size: 1.65rem;
+  line-height: 2.7rem;
+  color: #060e32;
+  margin: 0;
+  direction: rtl;
+}
+
+.single-doa .doa-section-block {
+  margin-bottom: 0.9rem;
+}
+.single-doa .section-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #6a74c9;
+  background: rgba(106, 116, 201, 0.12);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 0.35rem;
+}
+.single-doa .transliteration-text {
+  margin: 0;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 500;
+}
+.single-doa .translate-en {
+  margin: 0 0 0.35rem 0;
+  color: #1e293b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.single-doa .translate-bn {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 1250px) {
   .single-doa h3.title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .single-doa .arabic-doa {
-    font-size: 1.4rem;
-  }
-  .single-doa p {
-    font-size: 1rem;
+    font-size: 1.45rem;
+    line-height: 2.4rem;
   }
 }
 @media screen and (max-width: 1055px) {
   .single-doa {
-    padding: 1.2rem 2.2rem;
+    padding: 1.2rem 1.4rem;
   }
   .single-doa h3.title {
-    font-size: 1rem !important;
+    font-size: 1.05rem;
   }
-  .single-doa p {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-  }
-}
-@media screen and (max-width: 840px) {
-  .single-doa {
-    padding: 1rem 1.4rem;
-  }
-  .single-doa p {
-    font-size: 0.7rem;
+  .single-doa .transliteration-text,
+  .single-doa .translate-en,
+  .single-doa .translate-bn {
+    font-size: 0.88rem;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 650px) {
+  .main-body .right-section {
+    position: static;
+  }
   .single-doa {
-    padding: 0.6rem 1rem;
+    padding: 1.2rem 1.2rem;
   }
   .single-doa .arabic-doa {
-    font-size: 1.2rem;
-    line-height: 2rem;
-  }
-  .single-doa p {
-    font-size: 0.6rem;
-    line-height: 1.1rem;
+    font-size: 1.35rem;
+    line-height: 2.2rem;
   }
 }
 

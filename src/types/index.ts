@@ -16,4 +16,6 @@ export interface DoaItem {
   arabic_doa: string;
   transliteration: string;
   translate: string;
+  translate_bn?: string;
+  tag?: 'fasting' | 'iftar' | 'istighfar';
 }
