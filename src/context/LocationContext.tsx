@@ -10,6 +10,7 @@ interface LocationContextType {
   allDistricts: District[];
   isDetecting: boolean;
   detectedAutomatically: boolean;
+  detectLocation: () => void;
 }
 
 const LocationContext = createContext<LocationContextType | undefined>(undefined);
@@ -21,26 +22,12 @@ export function LocationProvider({ children }: { children: ReactNode }) {
   const [isDetecting, setIsDetecting] = useState<boolean>(true);
   const [detectedAutomatically, setDetectedAutomatically] = useState<boolean>(false);
 
-  useEffect(() => {
-    // 1. Check local storage first
-    try {
-      const savedId = localStorage.getItem(STORAGE_KEY);
-      if (savedId) {
-        const found = BANGLADESH_DISTRICTS.find((d) => d.id === savedId);
-        if (found) {
-          setCurrentDistrict(found);
-        }
-      }
-    } catch {
-      // ignore storage access error
-    }
-
-    // 2. Automatically detect user location using Geolocation API
+  const detectLocation = () => {
     if (typeof window !== 'undefined' && 'geolocation' in navigator) {
+      setIsDetecting(true);
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          // Only match if coordinates are reasonably near Bangladesh (Lat 20 to 27, Lng 88 to 93)
           if (latitude >= 20 && latitude <= 27 && longitude >= 87 && longitude <= 94) {
             const nearest = findNearestDistrict(latitude, longitude);
             if (nearest) {
@@ -60,14 +47,31 @@ export function LocationProvider({ children }: { children: ReactNode }) {
           setIsDetecting(false);
         },
         {
-          enableHighAccuracy: false,
+          enableHighAccuracy: true,
           timeout: 8000,
-          maximumAge: 3600000, // 1 hour cache
         }
       );
     } else {
       setIsDetecting(false);
     }
+  };
+
+  useEffect(() => {
+    // 1. Check local storage first
+    try {
+      const savedId = localStorage.getItem(STORAGE_KEY);
+      if (savedId) {
+        const found = BANGLADESH_DISTRICTS.find((d) => d.id === savedId);
+        if (found) {
+          setCurrentDistrict(found);
+        }
+      }
+    } catch {
+      // ignore
+    }
+
+    // 2. Initial auto-detection
+    detectLocation();
   }, []);
 
   const setDistrictById = (districtId: string) => {
@@ -91,6 +95,7 @@ export function LocationProvider({ children }: { children: ReactNode }) {
         allDistricts: BANGLADESH_DISTRICTS,
         isDetecting,
         detectedAutomatically,
+        detectLocation,
       }}
     >
       {children}

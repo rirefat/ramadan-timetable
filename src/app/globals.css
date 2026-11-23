@@ -557,23 +557,516 @@ body {
   margin: 0.02rem;
   font-weight: 700;
 }
-.area-section .area-selection .district-select {
-  padding: 0.45rem 0.8rem;
-  border-radius: 8px;
-  border: 1px solid #d5dbed;
-  background-color: #eff2f9;
-  color: #484848;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.2s ease;
+.area-section .area-selection {
+  position: relative;
 }
-.area-section .area-selection .district-select:hover,
-.area-section .area-selection .district-select:focus {
+
+/* ==========================================================================
+   Creative & Modern District Dropdown Styles
+   ========================================================================== */
+.custom-district-selector {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 260px;
+  max-width: 330px;
+  font-family: 'Quicksand', sans-serif;
+  user-select: none;
+}
+
+.selector-trigger-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.selector-trigger {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.48rem 0.85rem;
+  background: #ffffff;
+  border: 1.5px solid #dbe2f1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(106, 116, 201, 0.08);
+  outline: none;
+  text-align: left;
+}
+
+.selector-trigger:hover {
+  border-color: #6a74c9;
+  background-color: #fbfbfe;
+  box-shadow: 0 4px 12px rgba(106, 116, 201, 0.16);
+  transform: translateY(-1px);
+}
+
+.selector-trigger.active {
   border-color: #6a74c9;
   background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(106, 116, 201, 0.2);
+}
+
+.trigger-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.trigger-pin-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a74c9;
+  flex-shrink: 0;
+}
+
+.trigger-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.district-main-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.district-bn-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #718096;
+}
+
+.trigger-offset-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  background: #eff2fb;
+  color: #5761b8;
+  border-radius: 9999px;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.trigger-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718096;
+  margin-left: 0.4rem;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.trigger-arrow.rotated {
+  transform: rotate(180deg);
+  color: #6a74c9;
+}
+
+/* Quick GPS Radar Button */
+.gps-quick-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #eff2f9 0%, #e2e8f8 100%);
+  border: 1.5px solid #dbe2f1;
+  border-radius: 12px;
+  color: #6a74c9;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(106, 116, 201, 0.08);
+}
+
+.gps-quick-btn:hover {
+  background: linear-gradient(135deg, #6a74c9 0%, #5761b8 100%);
+  color: #ffffff;
+  border-color: #5761b8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(106, 116, 201, 0.3);
+}
+
+.gps-quick-btn.detecting {
+  background: #f0f2fb;
+  border-color: #6a74c9;
+}
+
+.radar-spinner {
+  width: 17px;
+  height: 17px;
+  border: 2.5px solid rgba(106, 116, 201, 0.25);
+  border-top-color: #6a74c9;
+  border-radius: 50%;
+  animation: gpsSpin 0.75s linear infinite;
+}
+
+@keyframes gpsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating Dropdown Panel */
+.dropdown-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 350px;
+  background: #ffffff;
+  border: 1px solid #dbe2f1;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px -6px rgba(34, 42, 85, 0.18), 0 4px 14px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: dropdownPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dropdownPopIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Auto-detect card in panel */
+.panel-header {
+  padding: 0.7rem 0.8rem 0.5rem;
+  background: #fafbff;
+  border-bottom: 1px solid #edf1f8;
+}
+
+.auto-detect-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  background: linear-gradient(135deg, rgba(106, 116, 201, 0.09) 0%, rgba(106, 116, 201, 0.18) 100%);
+  border: 1px solid rgba(106, 116, 201, 0.28);
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.22s ease;
+  font-family: inherit;
+}
+
+.auto-detect-card:hover {
+  background: linear-gradient(135deg, rgba(106, 116, 201, 0.16) 0%, rgba(106, 116, 201, 0.28) 100%);
+  border-color: #6a74c9;
+  transform: translateY(-1px);
+}
+
+.radar-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: #6a74c9;
+  color: #ffffff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.radar-ping {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid #6a74c9;
+  animation: radarPulse 1.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes radarPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.auto-detect-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.auto-detect-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #3b4382;
+}
+
+.auto-detect-subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* Search Box */
+.panel-search-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid #edf1f8;
+  background: #ffffff;
+}
+
+.panel-search-box .search-icon {
+  color: #94a3b8;
+  margin-right: 0.55rem;
+  flex-shrink: 0;
+}
+
+.panel-search-box .search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #2d3748;
+  background: transparent;
+}
+
+.panel-search-box .search-input::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.clear-search-btn {
+  border: none;
+  background: #e2e8f0;
+  color: #64748b;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clear-search-btn:hover {
+  background: #cbd5e1;
+  color: #1e293b;
+}
+
+/* Division Pills */
+.division-pills-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.8rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: #fafbff;
+  border-bottom: 1px solid #edf1f8;
+  scrollbar-width: none;
+}
+
+.division-pills-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.division-pill {
+  padding: 0.25rem 0.65rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.division-pill:hover {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.division-pill.active {
+  background: #6a74c9;
+  color: #ffffff;
+  border-color: #6a74c9;
+  box-shadow: 0 2px 6px rgba(106, 116, 201, 0.3);
+}
+
+/* District List */
+.district-list {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.district-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.district-list::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.district-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.48rem 0.7rem;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s ease;
+  font-family: inherit;
+}
+
+.district-item:hover {
+  background: #f1f4fb;
+  transform: translateX(3px);
+}
+
+.district-item.selected {
+  background: #edf1fb;
+  font-weight: 700;
+}
+
+.item-names {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.item-en-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.item-bn-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.item-division-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #94a3b8;
+  padding: 0.08rem 0.38rem;
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.item-right {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.item-offsets {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.offset-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.12rem 0.38rem;
+  border-radius: 4px;
+}
+
+.offset-badge.sehri {
+  background: rgba(99, 102, 241, 0.1);
+  color: #4f46e5;
+}
+
+.offset-badge.ifter {
+  background: rgba(227, 94, 80, 0.1);
+  color: #d94838;
+}
+
+.check-icon {
+  color: #6a74c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Empty State */
+.no-results {
+  padding: 1.6rem 1rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.no-results p {
+  margin: 0 0 0.6rem 0;
+}
+
+.reset-filter-btn {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #6a74c9;
+  background: #edf1fb;
+  border: 1px solid rgba(106, 116, 201, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-filter-btn:hover {
+  background: #6a74c9;
+  color: #ffffff;
+}
+
+/* Panel Footer */
+.panel-footer {
+  padding: 0.48rem 0.8rem;
+  background: #fafbff;
+  border-top: 1px solid #edf1f8;
+  text-align: center;
+  font-size: 0.68rem;
+  color: #94a3b8;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1110px) {
@@ -624,9 +1117,44 @@ body {
     font-size: 1.5rem !important;
     margin: 0 !important;
   }
-  .area-section .area-selection .district-select {
-    font-size: 0.8rem;
-    padding: 0.35rem 0.5rem;
+  .area-section .area-selection .custom-district-selector {
+    max-width: 100%;
+    min-width: 200px;
+  }
+  .dropdown-panel {
+    right: 0;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .area-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+    padding: 0.85rem 1.2rem;
+  }
+  .area-section .location {
+    justify-content: center;
+  }
+  .area-section .location img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .dropdown-panel {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 295px;
+  }
+  @keyframes dropdownPopIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -8px) scale(0.97);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0) scale(1);
+    }
   }
 }
 
