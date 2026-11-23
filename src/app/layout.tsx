@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import KursorEffect from '@/components/KursorEffect/KursorEffect';
+import { LocationProvider } from '@/context/LocationContext';
 
 export const metadata: Metadata = {
   title: 'Ramadan Calendar 2026',
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div id="root">{children}</div>
+        <LocationProvider>
+          <div id="root">{children}</div>
+        </LocationProvider>
         <KursorEffect />
       </body>
     </html>
