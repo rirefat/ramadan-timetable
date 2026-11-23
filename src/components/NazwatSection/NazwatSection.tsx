@@ -16,11 +16,14 @@ const NazwatSection: React.FC<SectionProps> = ({ scheduleData }) => {
       <h2>10 Days Of Nazwat</h2>
       <div className="schedule-table-wrap">
         <div className="headings">
-          <h3>Ramadan</h3>
-          <h3>Date</h3>
-          <h3>Day</h3>
-          <h3>Sehri</h3>
-          <h3>Iftar</h3>
+          <h3 className="col-roza">
+            <span className="heading-full">Ramadan</span>
+            <span className="heading-short">Roza</span>
+          </h3>
+          <h3 className="col-date">Date</h3>
+          <h3 className="col-day">Day</h3>
+          <h3 className="col-sehri">Sehri</h3>
+          <h3 className="col-ifter">Iftar</h3>
         </div>
         <div className="schedules">
           {
