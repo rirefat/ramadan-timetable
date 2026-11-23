@@ -720,7 +720,8 @@ body {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  width: 350px;
+  width: 380px;
+  max-width: calc(100vw - 2rem);
   background: #ffffff;
   border: 1px solid #dbe2f1;
   border-radius: 16px;
@@ -875,48 +876,112 @@ body {
   color: #1e293b;
 }
 
-/* Division Pills */
-.division-pills-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.8rem;
-  overflow-x: auto;
-  white-space: nowrap;
+/* Division Filter Section */
+.division-section {
   background: #fafbff;
   border-bottom: 1px solid #edf1f8;
-  scrollbar-width: none;
+  padding: 0.55rem 0.8rem 0.65rem;
 }
 
-.division-pills-bar::-webkit-scrollbar {
-  display: none;
+.division-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.45rem;
+  padding: 0 0.1rem;
+}
+
+.division-section-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.division-count-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: #f1f5f9;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.division-reset-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #6a74c9;
+  background: rgba(106, 116, 201, 0.1);
+  border: none;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.division-reset-tag:hover {
+  background: #6a74c9;
+  color: #ffffff;
+}
+
+.division-pills-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.4rem;
+  align-items: center;
 }
 
 .division-pill {
-  padding: 0.25rem 0.65rem;
-  font-size: 0.73rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
   font-weight: 600;
   font-family: inherit;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dbe2f1;
   background: #ffffff;
-  color: #64748b;
+  color: #4b5563;
   border-radius: 9999px;
   cursor: pointer;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.division-pill .div-en {
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+.division-pill .div-bn {
+  font-size: 0.68rem;
+  color: #8392a5;
+  font-weight: 500;
 }
 
 .division-pill:hover {
   background: #f1f5f9;
-  color: #334155;
-  border-color: #cbd5e1;
+  color: #1e293b;
+  border-color: #6a74c9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(106, 116, 201, 0.12);
 }
 
 .division-pill.active {
   background: #6a74c9;
   color: #ffffff;
   border-color: #6a74c9;
-  box-shadow: 0 2px 6px rgba(106, 116, 201, 0.3);
+  box-shadow: 0 2px 8px rgba(106, 116, 201, 0.35);
+}
+
+.division-pill.active .div-en {
+  color: #ffffff;
+}
+
+.division-pill.active .div-bn {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* District List */
@@ -1144,7 +1209,20 @@ body {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
-    width: 295px;
+    width: min(340px, calc(100vw - 2rem));
+  }
+  .division-pills-bar {
+    gap: 0.25rem 0.3rem;
+  }
+  .division-pill {
+    padding: 0.2rem 0.45rem;
+    font-size: 0.68rem;
+  }
+  .division-pill .div-en {
+    font-size: 0.68rem;
+  }
+  .division-pill .div-bn {
+    font-size: 0.62rem;
   }
   @keyframes dropdownPopIn {
     0% {

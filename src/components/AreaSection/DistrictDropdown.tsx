@@ -4,7 +4,34 @@ import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useLocation } from '@/context/LocationContext';
 import { District } from '@/data/districtsData';
 
-const DIVISIONS = ['All', 'Dhaka', 'Chattogram', 'Rajshahi', 'Khulna', 'Barishal', 'Sylhet', 'Rangpur', 'Mymensingh'];
+interface DivisionItem {
+  id: string;
+  name: string;
+  bn: string;
+}
+
+const DIVISIONS: DivisionItem[] = [
+  { id: 'All', name: 'All', bn: 'সব' },
+  { id: 'Dhaka', name: 'Dhaka', bn: 'ঢাকা' },
+  { id: 'Chattogram', name: 'Chattogram', bn: 'চট্টগ্রাম' },
+  { id: 'Rajshahi', name: 'Rajshahi', bn: 'রাজশাহী' },
+  { id: 'Khulna', name: 'Khulna', bn: 'খুলনা' },
+  { id: 'Barishal', name: 'Barishal', bn: 'বরিশাল' },
+  { id: 'Sylhet', name: 'Sylhet', bn: 'সিলেট' },
+  { id: 'Rangpur', name: 'Rangpur', bn: 'রংপুর' },
+  { id: 'Mymensingh', name: 'Mymensingh', bn: 'ময়মনসিংহ' },
+];
+
+const DIVISION_BN_MAP: Record<string, string> = {
+  Dhaka: 'ঢাকা',
+  Chattogram: 'চট্টগ্রাম',
+  Rajshahi: 'রাজশাহী',
+  Khulna: 'খুলনা',
+  Barishal: 'বরিশাল',
+  Sylhet: 'সিলেট',
+  Rangpur: 'রংপুর',
+  Mymensingh: 'ময়মনসিংহ',
+};
 
 const DistrictDropdown: React.FC = () => {
   const { currentDistrict, setDistrictById, allDistricts, isDetecting, detectLocation } = useLocation();
@@ -47,11 +74,13 @@ const DistrictDropdown: React.FC = () => {
     return allDistricts.filter((d: District) => {
       const matchesDivision = selectedDivision === 'All' || d.division === selectedDivision;
       const q = searchQuery.toLowerCase().trim();
+      const divisionBn = DIVISION_BN_MAP[d.division] || '';
       const matchesSearch =
         !q ||
         d.name.toLowerCase().includes(q) ||
         d.bnName.includes(q) ||
-        d.division.toLowerCase().includes(q);
+        d.division.toLowerCase().includes(q) ||
+        divisionBn.includes(q);
       return matchesDivision && matchesSearch;
     });
   }, [allDistricts, selectedDivision, searchQuery]);
@@ -171,18 +200,40 @@ const DistrictDropdown: React.FC = () => {
             )}
           </div>
 
-          {/* Division Filter Pills */}
-          <div className="division-pills-bar">
-            {DIVISIONS.map((division) => (
-              <button
-                key={division}
-                type="button"
-                onClick={() => setSelectedDivision(division)}
-                className={`division-pill ${selectedDivision === division ? 'active' : ''}`}
-              >
-                {division}
-              </button>
-            ))}
+          {/* Division Filter Section */}
+          <div className="division-section">
+            <div className="division-section-header">
+              <span className="division-section-title">Divisions of Bangladesh</span>
+              {selectedDivision !== 'All' ? (
+                <button
+                  type="button"
+                  onClick={() => setSelectedDivision('All')}
+                  className="division-reset-tag"
+                  title="Clear division filter"
+                >
+                  Show All ({allDistricts.length})
+                </button>
+              ) : (
+                <span className="division-count-badge">8 Divisions</span>
+              )}
+            </div>
+            <div className="division-pills-bar">
+              {DIVISIONS.map((div) => {
+                const isActive = selectedDivision === div.id;
+                return (
+                  <button
+                    key={div.id}
+                    type="button"
+                    onClick={() => setSelectedDivision(div.id)}
+                    className={`division-pill ${isActive ? 'active' : ''}`}
+                    title={`${div.name} Division (${div.bn})`}
+                  >
+                    <span className="div-en">{div.name}</span>
+                    <span className="div-bn">{div.bn}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* District Options List */}
