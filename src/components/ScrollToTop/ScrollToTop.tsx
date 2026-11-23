@@ -30,32 +30,16 @@ const ScrollToTop: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      style={{
-        position: 'fixed',
-        bottom: '40px',
-        right: '40px',
-        width: '40px',
-        height: '40px',
-        borderRadius: '50%',
-        backgroundColor: '#fff',
-        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
-        border: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        zIndex: 1000,
-        transition: 'opacity 0.3s ease',
-      }}
+      className="scroll-to-top-btn"
       aria-label="Scroll to top"
     >
       <svg
-        width="15"
-        height="15"
+        width="16"
+        height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#6a74c9"
-        strokeWidth="3"
+        stroke="currentColor"
+        strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       >

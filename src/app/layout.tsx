@@ -1,6 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import KursorEffect from '@/components/KursorEffect/KursorEffect';
 import { LocationProvider } from '@/context/LocationContext';
 
 export const metadata: Metadata = {
@@ -10,6 +9,13 @@ export const metadata: Metadata = {
   icons: {
     icon: '/logo.png',
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#6a74c9',
 };
 
 export default function RootLayout({
@@ -23,7 +29,6 @@ export default function RootLayout({
         <LocationProvider>
           <div id="root">{children}</div>
         </LocationProvider>
-        <KursorEffect />
       </body>
     </html>
   );
