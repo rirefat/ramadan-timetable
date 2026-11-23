@@ -40,10 +40,12 @@ const TopBanner: React.FC<TopBannerProps> = ({ scheduleData }) => {
   const dateNum = now.getDate();
   const todayISO = `${yearNum}-${String(monthNum).padStart(2, '0')}-${String(dateNum).padStart(2, '0')}`;
   const shortDateM_D_Y = `${monthNum}/${dateNum}/${yearNum}`;
+  const formattedFullDate = `${dateNum} ${monthList[now.getMonth()]} ${yearNum}`;
 
   const today = scheduleData.filter((singleData) => {
     return singleData.shortDate === shortDateM_D_Y ||
            singleData.shortDate === todayISO ||
+           singleData.date === formattedFullDate ||
            singleData.shortDate === now.toLocaleDateString();
   });
 

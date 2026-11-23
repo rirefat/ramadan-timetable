@@ -157,7 +157,7 @@ $$\text{District Iftar} = \text{Dhaka Iftar} + \Delta_{\text{Iftar}}$$
 - [x] Responsive layout for mobile and desktop
 - [ ] **Phase 1 (Stabilization):**
   - [ ] Eliminate `setInterval` render leak in `TopBanner`
-  - [ ] Sanitize `data.json` for all 30 days of Ramadan 2025
+  - [x] Sanitize `data.json` for all 30 days of Ramadan 2026
   - [ ] Fix locale-dependent date lookup (`toLocaleDateString`)
 - [ ] **Phase 2 (Architecture Modernization):**
   - [ ] Migrate build system from CRA to **Vite**
